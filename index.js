@@ -7,7 +7,7 @@ require('dotenv').config();
 
 var app = express();
 
-var upload = multer({ dest: 'uploads/' }); // 'uploads/' is the folder where files are temporarily stored
+var upload = multer({ dest: 'uploads/' }); 
 
 app.use(cors());
 app.use('/public', express.static(process.cwd() + '/public'));
